@@ -40,5 +40,9 @@
       "eslint --fix -c ./.eslintrc.js --ext .js,.vue,jsx src/",
       "git add"
     ]
+  },
+  "engines": {
+    "node": "^12.14.0",
+    "npm": "^6.14.15"
   }
 }
