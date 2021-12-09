@@ -12,12 +12,12 @@
 
 <script>
 // @ is an alias to /src
-import HelloGo from '../components/HelloGo.vue'
+import HelloGo from "../components/HelloGo.vue";
 
 export default {
-  name: 'ViewsHome',
+  name: "ViewsHome",
   components: {
     HelloGo,
   },
-}
+};
 </script>

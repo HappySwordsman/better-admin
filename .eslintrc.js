@@ -3,23 +3,23 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/standard', '@vue/prettier'],
+  extends: ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/standard", "@vue/prettier"],
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'prettier/prettier': [
-      'warn',
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "prettier/prettier": [
+      "warn",
       {
         // singleQuote: none,
-        // semi: false,
-        trailingComma: 'es5',
+        // semi: true,
+        trailingComma: "es5",
       },
     ],
   },
   globals: {
-    defineProps: 'readonly',
+    defineProps: "readonly",
   },
-}
+};

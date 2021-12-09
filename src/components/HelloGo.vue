@@ -103,7 +103,7 @@
 <script setup>
 defineProps({
   msg: String,
-})
+});
 </script>
 <style scoped>
 h3 {

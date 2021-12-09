@@ -6,14 +6,14 @@ import {
   NSpace,
   NGrid,
   NGridItem,
-} from 'naive-ui'
+} from "naive-ui";
 // 通用字体
-import 'vfonts/Lato.css'
+import "vfonts/Lato.css";
 // 等宽字体
-import 'vfonts/FiraCode.css'
+import "vfonts/FiraCode.css";
 
 const naive = create({
   components: [NButton, NSpace, NGrid, NGridItem],
-})
+});
 
-export default naive
+export default naive;
