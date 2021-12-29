@@ -13,4 +13,14 @@ module.exports = {
       "@": resolve("src"),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @import "./src/themes/color.scss";
+        @import "./src/themes/base.scss";
+        `,
+      },
+    },
+  },
 };

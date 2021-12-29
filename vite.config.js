@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import legacy from "@vitejs/plugin-legacy";
 import eslintPlugin from "vite-plugin-eslint";
-import configResolve from "./config/resolve";
+import baseConfig from "./config/base.conf";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,15 +21,6 @@ export default defineConfig({
     }),
     legacy(),
   ],
-  resolve: configResolve.resolve,
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-        @import "./src/themes/color.scss";
-        @import "./src/themes/base.scss";
-        `,
-      },
-    },
-  },
+  resolve: baseConfig.resolve,
+  css: baseConfig.css,
 });
