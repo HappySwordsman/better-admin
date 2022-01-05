@@ -12,7 +12,9 @@
       >
         <side-menu />
       </n-layout-sider>
-      <n-layout-content :native-scrollbar="false"></n-layout-content>
+      <n-layout-content :native-scrollbar="false">
+        <router-view />
+      </n-layout-content>
     </n-layout>
   </n-layout>
 </template>

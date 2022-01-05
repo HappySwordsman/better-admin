@@ -17,8 +17,7 @@ module.exports = {
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @import "./src/themes/color.scss";
-        @import "./src/themes/base.scss";
+        @import "./src/themes/index.scss";
         `,
       },
     },

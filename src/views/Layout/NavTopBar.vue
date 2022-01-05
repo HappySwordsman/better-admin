@@ -1,6 +1,8 @@
 <template>
   <header class="nav-top-bar">
-    <div class="nav-top-left-item"></div>
+    <div class="nav-top-left-item">
+      <h1 class="page-title">better admin</h1>
+    </div>
     <div class="nav-top-right-item clearfix">
       <div class="item-block avatar-box">
         <user-avatar />
@@ -25,6 +27,18 @@ import UserAvatar from "@/views/Layout/components/UserAvatar";
     cursor: pointer;
     height: 50px;
     user-select: none;
+  }
+  .page-title {
+    font-family: photogenics;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(90deg, $color-primary, $color-success);
+    -webkit-background-clip: text;
+    line-height: 42px;
+    height: 42px;
+    font-size: 28px;
+    margin: 0;
+    cursor: pointer;
   }
 }
 .item-block {
