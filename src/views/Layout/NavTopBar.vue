@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import UserAvatar from "@/views/Layout/components/UserAvatar";
+import UserAvatar from "@/views/Layout/components/UserAvatar.vue";
 </script>
 
 <style scoped lang="scss">

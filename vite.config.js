@@ -13,12 +13,15 @@ export default defineConfig({
     strictPort: true,
   },
   plugins: [
-    vue(), // 设置eslint
+    // vue3当文件组件的支持
+    vue(),
+    // 设置eslint
     eslintPlugin({
       include: ["src/**/*.vue", "src/**/*.js"], // 检查的文件
       exclude: ["./node_modules/**"],
       cache: false,
     }),
+    // 传统浏览器的支持
     legacy(),
   ],
   resolve: baseConfig.resolve,

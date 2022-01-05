@@ -13,9 +13,11 @@ NProgress.configure({ showSpinner: false });
 router.beforeEach((to, from, next) => {
   NProgress.start();
   if (!hasDoAddRoutes) {
+    // 挂载动态路由
     createAsyncRoutesByMenuOptions(asyncRoutesOptions);
     hasDoAddRoutes = true;
     NProgress.done();
+    // 确保挂载后的路由可以正常访问做一次重定向
     return next({
       replace: true,
       path: to.path,

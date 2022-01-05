@@ -19,12 +19,21 @@
   </n-layout>
 </template>
 
-<script setup>
-import NavTopBar from "@/views/Layout/NavTopBar";
-import SideMenu from "@/views/Layout/SideMenu";
-import { ref } from "vue";
-
-const sideCollapsed = ref(false);
+<script>
+import NavTopBar from "@/views/Layout/NavTopBar.vue";
+import SideMenu from "@/views/Layout/SideMenu.vue";
+export default {
+  name: "PageLayout",
+  data() {
+    return {
+      sideCollapsed: false,
+    };
+  },
+  components: {
+    NavTopBar,
+    SideMenu,
+  },
+};
 </script>
 
 <style scoped lang="scss">
