@@ -103,6 +103,9 @@ export default {
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  img {
+    user-select: none;
+  }
   .custom-navbar {
     padding-top: 15px;
   }
