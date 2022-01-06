@@ -3,7 +3,7 @@
     <n-avatar
       round
       :size="50"
-      src="https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg"
+      src="https://img1.baidu.com/it/u=2288921297,1372081019&fm=26&fmt=auto"
     />
   </n-dropdown>
 </template>
