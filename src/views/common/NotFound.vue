@@ -99,7 +99,7 @@ export default {
 }
 
 .bg-purple {
-  background: url("@/assets/pics/system-error/page-bg.jpg") repeat-x left top;
+  background: url("~@/assets/pics/system-error/page-bg.jpg") repeat-x left top;
   background-size: cover;
   height: 100%;
   overflow: hidden;
