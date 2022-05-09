@@ -1,10 +1,11 @@
 <template>
-  <n-layout class="full-win">
-    <n-layout-header>
+  <n-layout class="bt-layout full-win">
+    <n-layout-header class="bt-layout__header">
       <nav-top-bar />
     </n-layout-header>
-    <n-layout has-sider class="layout-main-body">
+    <n-layout has-sider class="bt-layout__main">
       <n-layout-sider
+        class="bt-layout__main-sider"
         :native-scrollbar="false"
         collapse-mode="width"
         :width="200"
@@ -12,7 +13,10 @@
       >
         <side-menu />
       </n-layout-sider>
-      <n-layout-content :native-scrollbar="false">
+      <n-layout-content
+        class="bt-layout__main-content"
+        :native-scrollbar="false"
+      >
         <router-view />
       </n-layout-content>
     </n-layout>
@@ -36,16 +40,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.n-layout-header {
-  position: relative;
-  z-index: 2;
-  box-shadow: rgb(0 0 0 / 20%) 0 4px 8px;
-}
-.n-layout-sider {
-  box-shadow: rgb(0 0 0 / 20%) 0 4px 8px;
-}
-.layout-main-body {
-  height: calc(100% - $nav-top-bar-height);
-}
-</style>
+<style scoped lang="scss"></style>

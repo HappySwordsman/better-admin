@@ -16,11 +16,11 @@ module.exports = {
   },
   css: {
     preprocessorOptions: {
-      scss: {
-        additionalData: `
-        @import "./src/themes/index.scss";
-        `,
-      },
+      // scss: {
+      //   additionalData: `
+      //   @import "./src/theme-chalk/index.scss";
+      //   `,
+      // },
     },
   },
 };

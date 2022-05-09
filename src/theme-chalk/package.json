@@ -1,0 +1,30 @@
+{
+  "name": "better-theme-chalk",
+  "version": "1.0.0",
+  "description": "better admin ui theme",
+  "main": "lib/index.css",
+  "scripts": {
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tnnevol",
+    "better-admin"
+  ],
+  "author": "tnnevol",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/register": "^7.17.7",
+    "autoprefixer": "^10.4.7",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime-corejs2": "^7.17.11"
+  }
+}
